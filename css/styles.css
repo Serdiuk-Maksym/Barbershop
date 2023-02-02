@@ -1,8 +1,289 @@
+:root {
+  --background-color: #ffffff;
+  --primary-color: #303030;
+  --link-color: #ffffff;
+  --accent-color: #ff6c00;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   color: E5E5E5;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ utilities ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
 }
 
 p {
-  color: red;
-  font-size: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ sidebar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.sidebar {
+}
+.logo {
+}
+.sidebar-list {
+}
+.sidebar-item {
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~ navigation ~~~ */
+
+.navigation {
+}
+.navigation-list {
+}
+.navigation-item {
+  display: block;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  color: var(--link-color);
+}
+
+.navigation-item:is(:hover, :focus) {
+  color: var(--accent-color);
+}
+
+.navigation > .link {
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ best barbershop ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.bestbarbershop {
+}
+.container {
+}
+
+.bestbarbershop > .first-con {
+  display: flex;
+  flex-direction: row-reverse;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.bestbarbershop-first {
+  margin-right: 100px;
+}
+
+.bestbarbershop-pretitle {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #303030;
+}
+.bestbarbershop-title {
+  margin-top: 20px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+
+  color: #303030;
+}
+.bestbarbershop-text {
+  margin-top: 20px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: #555555;
+}
+.bestbarbershop-text2 {
+  margin-top: 20px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.86;
+  letter-spacing: 0.02em;
+
+  color: #555555;
+}
+.bestbarbershop-btn {
+  margin-top: 42px;
+  padding: 12px 20px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  cursor: pointer;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: #303030;
+  background: #ffffff;
+}
+.bestbarbershop-btn:is(:hover, :focus) {
+  color: #ffffff;
+  background: #ff6c00;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+.bestbarbershop-list {
+  display: inherit;
+  flex-direction: row-reverse;
+}
+.bestbarbershop-photo {
+  margin-right: 30px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Our barbers ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+.barbers {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  background: #f7f7f7;
+}
+.container {
+}
+.barbers-subtitle {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+  color: #303030;
+}
+.barbers-title {
+  margin-top: 20px;
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 1.17;
+  letter-spacing: 0.05em;
+  color: #303030;
+}
+.barbers-list {
+  display: flex;
+  margin-top: 44px;
+}
+.barbers-item {
+}
+
+.barbers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.barbers-name {
+  margin-top: 30px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.39;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #303030;
+}
+.barbers-subname {
+  margin-top: 8px;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #ff6c00;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Portfolio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.container {
+}
+.portfolio-subtitle {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  text-transform: uppercase;
+
+  color: #303030;
+}
+.portfolio-title {
+}
+.portfolio-list {
+  display: flex;
+  margin-top: 44px;
+}
+.portfolio-item {
+}
+
+.portfolio-item:not(:last-child) {
+  margin-right: 30px;
 }

@@ -4,35 +4,41 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>BarberShop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
-      <div>
-        <img src="./img/Logo.svg" alt="Logo" />
-        <ul>
-          <li>
-            <a href="#">Instagram</a>
+      <div class="sidebar">
+        <img class="logo" src="./img/Logo.svg" alt="Logo" />
+        <ul class="sidebar-list">
+          <li class="sidebar-item">
+            <a class="link" href="#">Instagram</a>
           </li>
-          <li>
-            <a href="#">Youtube</a>
+          <li class="sidebar-item">
+            <a class="link" href="#">Youtube</a>
           </li>
         </ul>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#">About</a>
+      <nav class="navigation">
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="link" href="#">About</a>
           </li>
-          <li>
-            <a href="#">Services and prices</a>
+          <li class="navigation-item">
+            <a class="link" href="#">Services and prices</a>
           </li>
-          <li>
-            <a href="#">Barbers</a>
+          <li class="navigation-item">
+            <a class="link" href="#">Barbers</a>
           </li>
-          <li>
-            <a href="#">Contacts</a>
+          <li class="navigation-item">
+            <a class="link" href="#">Contacts</a>
           </li>
         </ul>
       </nav>
@@ -53,39 +59,45 @@
         </div>
       </section>
       <!-- Best BarberShop -->
-      <section>
-        <p>About</p>
-        <h2>Best Barbershop in your city</h2>
-        <p>
-          If you want to add more confidence to your image, you should
-          definitely visit us.
-        </p>
-        <p>
-          We are a team that never stops at what has been achieved and are
-          thirsty for changes. And when you fall into the hands of our master,
-          you will never be the same again. We are a team that is always "on the
-          same wave" with clients. Therefore, we are always ready to improve
-          everyone who comes to us!
-        </p>
-        <button type="button">ONLINE-BOOKING</button>
-        <ul>
-          <li>
-            <img
-              src="./img/img1.jpg"
-              alt="shaving beard"
-              width="270"
-              height="445"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/img2.jpg"
-              alt="shaving the back of the head"
-              width="270"
-              height="445"
-            />
-          </li>
-        </ul>
+      <section class="bestbarbershop">
+        <div class="container first-con">
+          <div class="bestbarbershop-first">
+            <p class="bestbarbershop-pretitle">About</p>
+            <h2 class="bestbarbershop-title">Best Barbershop in your city</h2>
+            <p class="bestbarbershop-text">
+              If you want to add more confidence to your image, you should
+              definitely visit us.
+            </p>
+            <p class="bestbarbershop-text2">
+              We are a team that never stops at what has been achieved and are
+              thirsty for changes. And when you fall into the hands of our
+              master, you will never be the same again. We are a team that is
+              always "on the same wave" with clients. Therefore, we are always
+              ready to improve everyone who comes to us!
+            </p>
+            <button class="bestbarbershop-btn" type="button">
+              ONLINE-BOOKING
+            </button>
+          </div>
+          <ul class="bestbarbershop-list">
+            <li class="bestbarbershop-photo">
+              <img
+                src="./img/img2.jpg"
+                alt="shaving the back of the head"
+                width="270"
+                height="445"
+              />
+            </li>
+            <li class="bestbarbershop-photo">
+              <img
+                src="./img/img1.jpg"
+                alt="shaving beard"
+                width="270"
+                height="445"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Services and prices -->
@@ -124,81 +136,85 @@
       </section>
 
       <!-- Our barbers -->
-      <section>
-        <p>For true enjoyers of the atmosphere</p>
-        <h2>Our barbers</h2>
-        <ul>
-          <li>
-            <img
-              src="./img/John_Smith.jpg"
-              alt="photo barber John Smith"
-              width="370"
-              height="346"
-            />
-            <h3>John Smith</h3>
-            <p>Extreme Barber</p>
-          </li>
-          <li>
-            <img
-              src="./img/Michele_Doe.jpg"
-              alt="photo barber Michele Doe"
-              width="370"
-              height="346"
-            />
-            <h3>Michele Doe</h3>
-            <p>Extreme Barber</p>
-          </li>
-          <li>
-            <img
-              src="./img/Alan_Black.jpg"
-              alt="photo barber Alan Black"
-              width="370"
-              height="346"
-            />
-            <h3>Alan Black</h3>
-            <p>Extreme Barber</p>
-          </li>
-        </ul>
+      <section class="barbers">
+        <div class="container">
+          <p class="barbers-subtitle">For true enjoyers of the atmosphere</p>
+          <h2 class="barbers-title">Our barbers</h2>
+          <ul class="barbers-list">
+            <li class="barbers-item">
+              <img
+                src="./img/John_Smith.jpg"
+                alt="photo barber John Smith"
+                width="370"
+                height="346"
+              />
+              <h3 class="barbers-name">John Smith</h3>
+              <p class="barbers-subname">Extreme Barber</p>
+            </li>
+            <li class="barbers-item">
+              <img
+                src="./img/Michele_Doe.jpg"
+                alt="photo barber Michele Doe"
+                width="370"
+                height="346"
+              />
+              <h3 class="barbers-name">Michele Doe</h3>
+              <p class="barbers-subname">Extreme Barber</p>
+            </li>
+            <li class="barbers-item">
+              <img
+                src="./img/Alan_Black.jpg"
+                alt="photo barber Alan Black"
+                width="370"
+                height="346"
+              />
+              <h3 class="barbers-name">Alan Black</h3>
+              <p class="barbers-subname">Extreme Barber</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Portfolio -->
-      <section>
-        <p>In Latin, "barba" means "beard"</p>
-        <h2 hidden>Portfolio</h2>
-        <ul>
-          <li>
-            <img
-              src="./img/Portfolio_1.jpg"
-              alt="haircut"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/Portfolio_2.jpg"
-              alt="shaving beard"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/Portfolio_3.jpg"
-              alt="face care"
-              width="270"
-              height="360"
-            />
-          </li>
-          <li>
-            <img
-              src="./img/Portfolio_4.jpg"
-              alt="shaving the back of the head"
-              width="270"
-              height="360"
-            />
-          </li>
-        </ul>
+      <section class="portfolio">
+        <div class="container">
+          <p class="portfolio-subtitle">In Latin, "barba" means "beard"</p>
+          <h2 hidden class="portfolio-title visually-hidden">Portfolio</h2>
+          <ul class="portfolio-list">
+            <li class="portfolio-item">
+              <img
+                src="./img/Portfolio_1.jpg"
+                alt="haircut"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="portfolio-item">
+              <img
+                src="./img/Portfolio_2.jpg"
+                alt="shaving beard"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="portfolio-item">
+              <img
+                src="./img/Portfolio_3.jpg"
+                alt="face care"
+                width="270"
+                height="360"
+              />
+            </li>
+            <li class="portfolio-item">
+              <img
+                src="./img/Portfolio_4.jpg"
+                alt="shaving the back of the head"
+                width="270"
+                height="360"
+              />
+            </li>
+          </ul>
+        </div>
       </section>
 
       <!-- Contacts -->
