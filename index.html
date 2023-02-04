@@ -14,48 +14,62 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
-      <div class="sidebar">
-        <img class="logo" src="./img/Logo.svg" alt="Logo" />
-        <ul class="sidebar-list">
-          <li class="sidebar-item">
-            <a class="link" href="#">Instagram</a>
-          </li>
-          <li class="sidebar-item">
-            <a class="link" href="#">Youtube</a>
-          </li>
-        </ul>
+    <header class="header">
+      <div class="container header-container">
+        <img class="header-logo" src="./img/Logo.svg" alt="logo" />
+        <nav class="header-navigation">
+          <ul class="header-navigation-list">
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="#">About</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="#">Services and prices</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="#">Barbers</a>
+            </li>
+            <li class="header-navigation-item">
+              <a class="header-navigation-link" href="#">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <a class="header-tel" href="tel:+380441111111">+38 044 111 11 11</a>
+        <button class="header-btn" type="button">Online-booking</button>
       </div>
-      <nav class="navigation">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="link" href="#">About</a>
-          </li>
-          <li class="navigation-item">
-            <a class="link" href="#">Services and prices</a>
-          </li>
-          <li class="navigation-item">
-            <a class="link" href="#">Barbers</a>
-          </li>
-          <li class="navigation-item">
-            <a class="link" href="#">Contacts</a>
-          </li>
-        </ul>
-      </nav>
     </header>
 
     <main>
       <!-- Hero -->
-      <section>
-        <p>A hair salon for men in Kyiv</p>
-        <h1>BarberShop</h1>
-        <p>
-          We are experts in trendy men’s haircuts. We work quickly, carefully
-          and with style.
-        </p>
-        <div>
-          <a href="#">Back</a>
-          <a href="#">Forward</a>
+      <section class="hero">
+        <div class="container hero-container">
+          <ul class="hero-list">
+            <li class="hero-item">
+              <a
+                class="hero-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Instagram</a
+              >
+            </li>
+            <li class="hero-item">
+              <a
+                class="hero-link"
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+          <div class="hero-wrap">
+            <p class="hero-pre-title">A hair salon for men in Kyiv</p>
+            <h1 class="hero-title">BarberShop</h1>
+            <p class="hero-after-title">
+              We are experts in trendy men’s haircuts. We work quickly,
+              carefully and with style.
+            </p>
+          </div>
         </div>
       </section>
       <!-- Best BarberShop -->

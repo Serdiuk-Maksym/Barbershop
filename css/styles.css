@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  color: E5E5E5;
+  color: #e5e5e5;
   font-family: 'Open Sans', sans-serif;
 }
 
@@ -59,37 +59,46 @@ a {
 }
 
 .container {
+  width: 100%;
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  outline: 2px solid red;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ sidebar ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.sidebar {
-}
-.logo {
-}
-.sidebar-list {
-}
-.sidebar-item {
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: gray;
 }
 
-/* ~~~~~~~~~~~~~~~~~~~~~~~~ navigation ~~~ */
+.header-container {
+  display: flex;
+  align-items: center;
+}
 
-.navigation {
+.header-logo {
+  margin-right: 130px;
 }
-.navigation-list {
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
 }
-.navigation-item {
-  display: block;
-  font-family: 'Open Sans';
-  font-style: normal;
+
+.header-navigation-list {
+  display: flex;
+  gap: 30px;
+}
+
+.header-navigation-item {
+}
+
+.header-navigation-link {
   font-weight: 600;
   font-size: 12px;
   line-height: 1.33;
@@ -97,11 +106,82 @@ a {
   color: var(--link-color);
 }
 
-.navigation-item:is(:hover, :focus) {
+.header-navigation-link:is(:hover, :focus) {
   color: var(--accent-color);
 }
 
-.navigation > .link {
+.header-tel {
+  margin-right: 30px;
+
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: var(--link-color);
+}
+
+.header-btn {
+  padding: 12px 20px;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.33;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: #303030;
+  background-color: transparent;
+}
+
+.header-btn:is(:hover, :focus) {
+  color: #ffffff;
+  background: #ff6c00;
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ hero ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.hero {
+}
+.hero-container {
+  display: flex;
+}
+.hero-list {
+  width: 100px;
+}
+.hero-item {
+}
+.hero-link {
+}
+.hero-wrap {
+  background-color: #797c8a;
+  flex-grow: 1;
+  padding: 272px 100px 208px;
+}
+.hero-pre-title {
+  color: rgba(157, 164, 189, 0.6);
+  margin-bottom: 20px;
+}
+.hero-title {
+  font-family: 'Raleway', sans-serif;
+  font-size: 72px;
+  line-height: 1.18;
+  letter-spacing: 0.05em;
+  color: var(--link-color);
+  margin-bottom: 20px;
+}
+.hero-after-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.02em;
+
+  color: #9da4bd;
+  max-width: 360px;
 }
 
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ best barbershop ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
