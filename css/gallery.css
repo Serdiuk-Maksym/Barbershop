@@ -1,0 +1,42 @@
+.gallery {
+  position: relative;
+  display: flex;
+}
+.gallery-list {
+  display: flex;
+}
+.gallery-item1 {
+  position: absolute;
+  top: 189px;
+  box-sizing: border-box;
+}
+.gallery-item2 {
+  position: absolute;
+  top: 150px;
+  left: 485px;
+  box-sizing: border-box;
+}
+.gallery-item3 {
+  position: absolute;
+  top: 150px;
+  right: 485px;
+  box-sizing: border-box;
+}
+.gallery-item4 {
+  position: absolute;
+  top: 189px;
+  right: 46px;
+  box-sizing: border-box;
+}
+.gallery-item5 {
+  position: absolute;
+  bottom: 64px;
+  left: 485px;
+  box-sizing: border-box;
+}
+.gallery-item6 {
+  position: absolute;
+  bottom: 64px;
+  right: 485px;
+  box-sizing: border-box;
+}
