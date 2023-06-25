@@ -1,566 +1,101 @@
-:root {
-  --background-color: #ffffff;
-  --primary-color: #303030;
-  --link-color: #ffffff;
-  --accent-color: #ff6c00;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  color: #e5e5e5;
-  font-family: 'Open Sans', sans-serif;
-}
-
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ utilities ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
 h1,
 h2,
-h3 {
-  margin: 0;
-  padding: 0;
-}
-
+h3,
+h4,
+h5,
+h6,
 p {
   margin: 0;
-  padding: 0;
 }
 
 ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-left: 0;
 }
 
 a {
   text-decoration: none;
-  color: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  display: block;
 }
 
 .container {
   width: 100%;
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  width: 1950px;
+  padding: 0 15px;
   margin: 0 auto;
-  outline: 2px solid red;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ header ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.header {
-  padding-top: 32px;
-  padding-bottom: 32px;
-  background-color: gray;
 }
 
 .header-container {
   display: flex;
-  align-items: center;
-}
+  width: 1920px;
+  height: 129px;
 
-.header-logo {
-  margin-right: 130px;
+  background: #000;
 }
-
 .header-navigation {
   display: flex;
-  align-items: center;
-  margin-right: auto;
 }
-
+.header-logo {
+  background: #fffbfb;
+}
 .header-navigation-list {
   display: flex;
+  margin-left: 630px;
   gap: 30px;
 }
-
-.header-navigation-item {
-}
-
 .header-navigation-link {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  color: var(--link-color);
+  display: inherit;
+  margin-top: 44px;
+  margin-bottom: 30px;
+  color: #fffcfc;
+  font-size: 36px;
+  font-family: Rosario;
+  font-style: italic;
+  font-weight: 700;
 }
 
-.header-navigation-link:is(:hover, :focus) {
-  color: var(--accent-color);
-}
-
-.header-tel {
-  margin-right: 30px;
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-
-  color: var(--link-color);
-}
-
-.header-btn {
-  padding: 12px 20px;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-
-  color: #303030;
-  background-color: transparent;
-}
-
-.header-btn:is(:hover, :focus) {
-  color: #ffffff;
-  background: #ff6c00;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ hero ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/* hero */
 
 .hero {
-}
-.hero-container {
-  display: flex;
-}
-.hero-list {
-  width: 100px;
-}
-.hero-item {
-}
-.hero-link {
-}
-.hero-wrap {
-  background-color: #797c8a;
   background-image: linear-gradient(
-    rgba(25, 28, 38, 0.2),
-    rgba(25, 28, 38, 0.2)
-  );
-  background-image: url(../img/slider-img1.jpg);
-  flex-grow: 1;
-  padding: 272px 100px 208px;
-}
-.hero-pre-title {
-  color: rgba(157, 164, 189, 0.6);
-  margin-bottom: 20px;
-}
-.hero-title {
-  font-family: 'Raleway', sans-serif;
-  font-size: 72px;
-  line-height: 1.18;
-  letter-spacing: 0.05em;
-  color: var(--link-color);
-  margin-bottom: 20px;
-}
-.hero-after-title {
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-
-  color: #9da4bd;
-  max-width: 360px;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ best barbershop ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.bestbarbershop {
-}
-.container {
-}
-
-.bestbarbershop > .first-con {
-  display: flex;
-  flex-direction: row-reverse;
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.bestbarbershop-first {
-  margin-right: 100px;
-}
-
-.bestbarbershop-pretitle {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
-  color: #303030;
-}
-.bestbarbershop-title {
-  margin-top: 20px;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-
-  color: #303030;
-}
-.bestbarbershop-text {
-  margin-top: 20px;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-
-  color: #555555;
-}
-.bestbarbershop-text2 {
-  margin-top: 20px;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.86;
-  letter-spacing: 0.02em;
-
-  color: #555555;
-}
-.bestbarbershop-btn {
-  margin-top: 42px;
-  padding: 12px 20px;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-
-  color: #303030;
-  background: #ffffff;
-}
-.bestbarbershop-btn:is(:hover, :focus) {
-  color: #ffffff;
-  background: #ff6c00;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-}
-.bestbarbershop-list {
-  display: inherit;
-  flex-direction: row-reverse;
-}
-.bestbarbershop-photo {
-  margin-right: 30px;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ services and prices ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.services-prices {
-  background-image: linear-gradient(
-      rgba(17, 19, 27, 0.8),
-      rgba(17, 19, 27, 0.8)
+      to right,
+      var(--hero-background-color),
+      var(--hero-background-color)
     ),
-    url(../img/services-prices-backgrounds.jpg);
+    url(../img/hero-bg-1x1.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
-.services-prices > .container {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-
-.services-prices-pretitle {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
-  color: rgba(157, 164, 189, 0.6);
-}
-.services-prices-title {
-  margin-top: 20px;
-  margin-bottom: 44px;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-  color: #ffffff;
-}
-
-.services-prices-mainlist {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.services-prices-list1 {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 20px;
-  width: 570px;
-  height: 240px;
-  gap: 20px;
-}
-.services-prices-item1 {
-  position: relative;
-  display: flex;
-
-  justify-content: space-between;
-  height: 30px;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: #9da4bd;
-}
-
-.services-prices-item1 > .text1 {
-  position: relative;
-  width: 100%;
-}
-
-.services-prices-item1 > .figure {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 5px;
-  transform: translateY(-8px);
-  margin-left: 12px;
-  margin-right: 12px;
-  background-color: rgba(157, 164, 189, 0.12);
-}
-
-.text1 {
-  width: 100%;
-  /* position: absolute;
-  top: 0;
-  left: 0; */
-}
-
-/* .text1::after {
-  content: '';
-  display: block;
-  width: 100%;
-  height: 1px;
-  margin-left: 12px;
-  margin-right: 12px;
-  background-color: rgba(157, 164, 189, 0.12);
-} */
-
-.text2 {
-  width: 100%;
-  /* position: absolute;
-  top: 0;
-  right: 0; */
-}
-.services-prices-list2 {
-  display: flex;
-  flex-direction: column;
-  padding: 30px 20px;
-  width: 570px;
-  height: 240px;
-  gap: 20px;
-}
-.services-prices-item2 {
-  height: 30px;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-  color: #9da4bd;
-}
-
-.services-prices-btn {
-  display: flex;
-  justify-content: center;
-}
-.services-prices-btn > .btn {
-  margin-top: 44px;
-  padding: 12px 20px;
-
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-  cursor: pointer;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 1.33;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: #ffffff;
-  background: transparent;
-}
-.services-prices-btn > .btn:is(:hover, :focus) {
-  color: #ffffff;
-  background: #ff6c00;
-  border: 1px solid #ff6c00;
-  border-radius: 25px;
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ why ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.why {
-  padding: 120px auto;
-}
-.why-pretitle {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
-
-  color: #303030;
-}
-.why-title {
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-
-  color: #303030;
-}
-.why-subtitle {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.67;
-  letter-spacing: 0.02em;
-
-  color: #555555;
-}
-.why-list {
-}
-.why-item {
-}
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Our barbers ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-.barbers {
-  padding-top: 120px;
-  padding-bottom: 120px;
-
-  background: #f7f7f7;
-}
-.container {
-}
-.barbers-subtitle {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
-  color: #303030;
-}
-.barbers-title {
-  margin-top: 20px;
-  font-family: 'Raleway';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 42px;
-  line-height: 1.17;
-  letter-spacing: 0.05em;
-  color: #303030;
-}
-.barbers-list {
-  display: flex;
-  margin-top: 44px;
-}
-.barbers-item {
-}
-
-.barbers-item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.barbers-name {
-  margin-top: 30px;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.39;
+.hero-subtitle {
+  color: #fff;
   text-align: center;
-  letter-spacing: 0.02em;
-  color: #303030;
+  font-size: 48px;
+  font-family: Rosario;
+  font-style: italic;
+  font-weight: 700;
 }
-.barbers-subname {
-  margin-top: 8px;
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.36;
+.hero-title {
+  color: #fff;
   text-align: center;
-  letter-spacing: 0.02em;
-  color: #ff6c00;
+  font-size: 200px;
+  font-family: Rosario;
+  font-style: italic;
+  font-weight: 700;
 }
-
-/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Portfolio ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
-
-.portfolio {
-  padding-top: 120px;
-  padding-bottom: 120px;
-}
-.container {
-}
-.portfolio-subtitle {
-  font-family: 'Open Sans';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 11px;
-  line-height: 1.36;
-  text-transform: uppercase;
-
-  color: #303030;
-}
-.portfolio-title {
-}
-.portfolio-list {
-  display: flex;
-  margin-top: 44px;
-}
-.portfolio-item {
-}
-
-.portfolio-item:not(:last-child) {
-  margin-right: 30px;
+.hero-text {
+  color: #fff;
+  text-align: center;
+  font-size: 72px;
+  font-family: Rosario;
+  font-style: italic;
+  font-weight: 700;
 }
