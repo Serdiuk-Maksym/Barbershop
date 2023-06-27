@@ -1,3 +1,9 @@
+:root {
+  --primary-color: blue;
+  --secondary-color: red;
+  --hero-background-color: #000;
+}
+
 h1,
 h2,
 h3,
@@ -36,7 +42,7 @@ img {
 .header-container {
   display: flex;
   width: 1920px;
-  height: 64px;
+  height: 100px;
 
   background: #000;
 }
@@ -48,7 +54,8 @@ img {
 }
 .header-navigation-list {
   display: flex;
-  margin-left: 630px;
+  margin-left: 800px;
+  padding-top: 25px;
   gap: 30px;
 }
 .header-navigation-link {
@@ -61,21 +68,39 @@ img {
   font-style: italic;
   font-weight: 700;
 }
-
+.header-navigation-link:hover,
+.header-navigation-link:focus {
+  color: #a3530a;
+}
+.current-link {
+  color: #a3530a;
+}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~/* hero */
 
 .hero {
-  background-image: linear-gradient(
-      to right,
-      var(--hero-background-color),
-      var(--hero-background-color)
-    ),
-    url(../img/hero-bg-1x1.jpg);
+  max-width: 1920px;
+  background-image: url(../img/herobg_1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
-.hero-subtitle {
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../img/herobg_2x.jpg);
+  }
+}
+.hero-subtitle1 {
+  padding-top: 120px;
+  color: #fff;
+  text-align: center;
+  font-size: 48px;
+  font-family: Rosario;
+  font-style: italic;
+  font-weight: 700;
+}
+.hero-subtitle2 {
   color: #fff;
   text-align: center;
   font-size: 48px;
@@ -91,7 +116,17 @@ img {
   font-style: italic;
   font-weight: 700;
 }
-.hero-text {
+.hero-text1 {
+  padding-top: 120px;
+  color: #fff;
+  text-align: center;
+  font-size: 72px;
+  font-family: Rosario;
+  font-style: italic;
+  font-weight: 700;
+}
+.hero-text2 {
+  padding-bottom: 120px;
   color: #fff;
   text-align: center;
   font-size: 72px;
